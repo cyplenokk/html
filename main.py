@@ -14,6 +14,14 @@ def index(title):
     param['title'] = title
     return render_template('index.html', **param)
 
+@app.route('/')
+@app.route('/index/<title>')
+def index(title):
+    param = {}
+    param['username'] = "Mars One"
+    param['title'] = title
+    return render_template('index.html', **param)
+
 @app.route('/odd_even')
 def odd_even():
     return render_template('odd_even.html', number=2)

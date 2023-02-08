@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div>
+  {% if training == 'science' %}
+  <h2>Научные симуляторы</h2>
+  <img src="{% trainng %}" alt="Научные симуляторы">
+  {% else %}
+  <h2>Инженерные тренажеры</h2>
+  <img src="" alt="Инженерные тренажеры">
+       {% endif %}
+</div>
+
+{% endblock %}
