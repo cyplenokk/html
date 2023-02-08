@@ -11,11 +11,12 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">Наше приложение</a>
+    <nav class="navbar navbar-light bg-light d-flex justify-content-between align-content-between">
+        <h1>Миссия Колонизации Марса</h1>
+        <h3 class="pe-2"> {{ username }}</h3>
     </nav>
 </header>
-<!-- Begin page content -->
+<h4>И на Марсе будут яблони цвести!</h4>
 <main role="main" class="container">
     {% block content %}{% endblock %}
 </main>
